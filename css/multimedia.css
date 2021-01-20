@@ -1,0 +1,297 @@
+body{
+	background-image: url(../img/wp1923013.jpg); /* imagen de fondo*/
+	background-size: 100%;                      /* tamano de la iamgen de fondo*/
+	background-attachment: fixed;			/* tamano de la iamgen de fondo*/
+	color: white;
+	box-sizing: border-box;
+}
+#Logo{
+	position: relative;
+	top: 50%;
+	left: 40%;
+	width: 20%;
+}
+#buscador {
+	position: relative;
+	height: 25px;
+	width: 150px;
+	margin: auto;
+	left: 180%;
+	font-size: 15px;
+	border: solid;
+	bottom: 75px;
+	border-radius: 5px;
+	background: rgba(252, 250, 250, 0.116);
+	color: rgb(255, 255, 255);
+}
+#buscador:hover{
+	border-color:rgb(0, 0, 0);
+}
+#log{
+	position: relative;
+	height: 25px;
+	width: 150px;
+	margin: auto;
+	left: -180%;
+	font-size: 23px;
+	border: solid;
+	bottom: 75px;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 5px;
+	background: rgba(252, 250, 250, 0.116);
+	border-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+}
+/*#reg{
+	background: rgba(252, 250, 250, 0.116);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	float: left;
+	font-size: 23px;
+	border: solid;
+	position: relative;
+	border-color: rgb(211, 17, 17);
+	text-decoration: none;
+	padding: 5px;
+	margin-top: -25%;
+	margin-left: -133%;
+}*/
+#log:hover{
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+/*#reg:hover{
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}*/
+::-webkit-scrollbar {
+	display: none;
+  }
+/*Edicion botones de logeo y registro*/
+#Menu{
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	margin-top:-10px;
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+	position: relative;
+}
+nav {
+	top:-20px;
+	position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:100%;
+	width:100%;
+}
+nav ul{
+	list-style:none;
+}
+nav > ul {
+	display:table;
+	width:100%;
+	background:#000;
+	position:relative;
+}
+nav > ul li{
+	display: table-cell;
+}
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+} 
+
+nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:#000;
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > ul > li a:hover {
+	background: rgba(252, 250, 250, 0.356);
+}
+ 
+nav > ul > li > a span {
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+ 
+nav > ul > li > a:hover > span {
+	top:0;
+}
+
+/*Colores Menu*/
+ nav ul li a .colorInicio {
+	 background: rgb(211, 17, 17);
+ }
+ nav ul li a .colorUsers{
+	background: rgb(211, 17, 17);
+}
+nav ul li a .colorProducto{
+	background: rgb(211, 17, 17);
+}
+nav ul li a .colorMulti{
+	background: rgb(211, 17, 17);
+}
+nav ul li a .colorContacto{
+	background: rgb(211, 17, 17);
+}
+/*Pie de pagina*/
+footer {
+	color: white;
+	position: relative;
+	width: 500px;
+	left: 37%;
+	font-size: 15px;
+
+}
+/*Galeria multimedia*/
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    background: rgba(48, 45, 45, 0.781);
+    border-radius: 10px;
+}
+
+/*Estilos de la galeria*/
+
+.galeria {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgba(48, 45, 45, 0.781);
+    border-radius: 10px;
+}
+
+.galeria li {
+    margin: 5px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 100px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+    display: none;
+}
+
+.modal:target {
+    
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.cerrar {
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+

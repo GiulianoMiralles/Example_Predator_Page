@@ -1,0 +1,26 @@
+$(document).ready(function() {
+    $("#productoss").click(function(){
+        $("#Contenedora").load("productos.html");
+    });
+    $("#accesorios.jq").click(function(){
+        $("#Contenedora").load("productos-acces.html");
+    });
+    $("#desktops.jq").click(function(){
+        $("#Contenedora").load("productos-desktops.html");
+    });
+    $("#laptops.jq").click(function(){
+        $("#Contenedora").load("productos-laptos.html");
+    });
+    $("#monitores.jq").click(function(){
+        $("#Contenedora").load("productos-monitores.html");
+    });
+    $("#login.jq").click(function(){
+        $("#Contenedora").load("login.html");
+    });
+    $("#multimedia.jq").click(function(){
+        $("#Contenedora").load("multimedia.html");
+    });
+    $("#contacto.jq").click(function(){
+        $("#Contenedora").load("contact.html");
+    });
+});
